@@ -1,1 +1,1 @@
-# How to align a molecule to cartesian axes
+# How to align a molecule to the cartesian axes
