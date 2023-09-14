@@ -9,3 +9,8 @@ Follow the procedure highlighted here in VMD (https://www.ks.uiuc.edu/Research/v
 Move the origin to the center of mass. 
 
 As far as I know this can be done in Gaussview with the command Edit->Reorient
+
+
+## Working with a SCAN in VMD
+
+Once the initial geometry is optimized and aligned I often perform a scan of one of the degrees of freedom. Unfortunately the scan is performed in internal coordinates, therefore the alignment is lost. To restore the alignment it is possible to use the RMSD visualizer tool in VMD. 
