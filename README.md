@@ -12,11 +12,15 @@ As far as I know this can be done in Gaussview with the command Edit->Reorient
 
 This can be done in VMD with the following lines in the Tk console:
 
-'' set mol [atomselect top "all"]
+```
+
+set mol [atomselect top "all"]
 
 set diff [vecsub {0.0 0.0 0.0} [measure center $mol]]
 
-$mol moveby $diff ''
+$mol moveby $diff
+
+```
 
 
 ## Working with a SCAN in VMD
