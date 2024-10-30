@@ -28,3 +28,9 @@ $mol moveby $diff
 Once the initial geometry is optimized and aligned I often perform a scan of one of the degrees of freedom. Unfortunately the scan is performed in internal coordinates, therefore the alignment is lost. To restore the alignment it is possible to use the RMSD visualizer tool in VMD. 
 
 Once the trajectory is loaded in VMD (usually I use ORCA, which produces nice "trj" files) it is necessary to go to "Extensions/Analysis/RMSD visualizer". Then the user has to choose to which atom align the trajectory (the reference is the first frame), it can be done in the Atom Selection Box using, for istance, "serial 5 6 8 9" to select atoms 5,6,8 and 9. Then the aligned trajectory can be visually inspected and saved. 
+
+
+save frames:
+
+for {set i 10} {$i < 100} {incr i} { set f [expr $i+170]
+         [atomselect top all frame $i]  writexyz geom_$f.xyz
